@@ -1,0 +1,245 @@
+/* font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto; */
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+  
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8B8B8B;
+    text-align: center;
+    background-color: #FAFAFA;
+  }
+
+.cestovatel {
+  margin-top: 60px;
+}
+
+h1,
+h2 {
+  color: black;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.prouzek {
+  background-color: #407BFF;
+  width: 60px;
+  height: 2px;
+  margin: 0 auto 30px auto;
+}
+
+.obsah1 {
+  margin: 30px 20px;
+}
+
+.tlac1odsazeni {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.tlac2odsazeni {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.tlacitko {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tlacitko1 {
+  background-color: #407BFF;
+}
+
+.tlacitko2 {
+  background-color: #8B8B8B;
+}
+
+.obsah2,
+.obsah3 {
+  margin: 15px 20px 30px 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px 20px 15px 20px;
+  box-shadow: 0 4px 6px #407BFF1F;
+}
+
+.box:last-child {
+  margin-bottom: 60px;
+}
+
+.box img {
+  padding: 20px 30px 20px 20px;
+}
+
+.box p {
+  padding: 30px 20px 30px 0;
+  margin: 0;
+  text-align: left;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 640px) {
+
+  .dvetlacitka {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tlac1odsazeni {
+    margin: 0;
+  }
+
+  .tlac2odsazeni {
+    margin: 0 0 0 20px;
+  }
+
+  .tlacitko1,
+  .tlacitko2 {
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+  .obsah2,
+  .obsah3 {
+    margin-bottom: 40px;
+  }
+
+  .kancelarramecky,
+  .delegatiramecky {
+    display: flex;
+    margin: 40px 20px 80px 20px;
+    flex: 0 0 calc(100% / 3);
+    justify-content: space-between;
+  }
+
+  .box {
+    display: block;
+    margin: 0 20px 0 0;
+  }
+
+  .box:last-child {
+    margin: 0;
+  }
+
+  .box img {
+    padding: 40px 0 20px 0;
+  }
+
+  .box p {
+    padding: 0 15px 40px 15px;
+    text-align: center;
+  }
+
+  .delegatiramecky {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .kontejner {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .uvod {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  .uvodtext {
+    order: 0;
+    text-align: left;
+    flex: 0 0 calc((100% - 60px) / 2);
+  }
+
+  .uvodobrazek {
+    order: 1;
+    flex: 0 0 calc((100% - 60px) / 2);
+  }
+
+  .cestovatel {
+    max-width: 425px;
+    margin-top: 0;
+  }
+
+  .prouzek {
+    margin-left: 0;
+  }
+  .obsah1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dvetlacitka {
+    justify-content: left;
+  }
+
+  .kancelar,
+  .delegati {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+  }
+
+  .kancelarramecky {
+    order: 0;
+  }
+  .kancelarramecky,
+  .delegatiramecky {
+    flex: 0 0 550px;
+    margin: 0;
+}
+
+  .kancelartext {
+    order: 1;
+    margin-left: 60px;
+  }
+
+  .kancelartext,
+  .delegatitext {
+    flex: 1 0 430px;
+    text-align: left;
+  }
+
+  .obsah2,
+  .obsah3 {
+    margin: 15px 0 0 0;
+  }
+
+  .delegatitext {
+    margin-right: 60px;
+  }
+}
