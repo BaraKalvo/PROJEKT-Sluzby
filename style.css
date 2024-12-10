@@ -15,8 +15,12 @@ body {
     background-color: #FAFAFA;
   }
 
-.cestovatel {
-  margin-top: 60px;
+.kontejner {
+  padding-inline: 20px;
+}
+
+section {
+  margin-block: 60px;
 }
 
 h1,
@@ -43,18 +47,14 @@ h2 {
   margin: 0 auto 30px auto;
 }
 
-.obsah1 {
-  margin: 30px 20px;
+
+.obsah {
+  margin: 30px auto;
 }
 
-.tlac1odsazeni {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
+.tlac1odsazeni,
 .tlac2odsazeni {
-  margin-top: 10px;
-  margin-bottom: 60px;
+  margin-block: 15px;
 }
 
 .tlacitko {
@@ -75,92 +75,79 @@ h2 {
   background-color: #8B8B8B;
 }
 
-.obsah2,
-.obsah3 {
-  margin: 15px 20px 30px 20px;
-}
-
 .box {
   display: flex;
   align-items: center;
   background-color: white;
   border-radius: 10px;
-  margin: 15px 20px 15px 20px;
-  box-shadow: 0 4px 6px #407BFF1F;
-}
-
-.box:last-child {
-  margin-bottom: 60px;
+  padding: 20px;
+  margin-block: 15px;
+  box-shadow: 0 4px 6px #407bff1f;
 }
 
 .box img {
-  padding: 20px 30px 20px 20px;
+  padding-right: 30px;
 }
 
 .box p {
-  padding: 30px 20px 30px 0;
-  margin: 0;
   text-align: left;
   font-size: 13px;
 }
 
 @media screen and (min-width: 640px) {
 
+  .obsah {
+    max-width: 550px;
+  }
+
+  .uvod,
+  .kancelar {
+    margin-bottom: 80px;
+  }
+
   .dvetlacitka {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .tlac1odsazeni {
-    margin: 0;
+    margin-block: 0;
   }
 
   .tlac2odsazeni {
-    margin: 0 0 0 20px;
-  }
-
-  .tlacitko1,
-  .tlacitko2 {
-    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-block: 0;
   }
 
   h2 {
     margin-top: 0;
   }
-  .obsah2,
-  .obsah3 {
-    margin-bottom: 40px;
-  }
 
   .kancelarramecky,
   .delegatiramecky {
     display: flex;
-    margin: 40px 20px 80px 20px;
-    flex: 0 0 calc(100% / 3);
+    width: 100%;
     justify-content: space-between;
+    
   }
 
   .box {
+    padding: 20px;
     display: block;
-    margin: 0 20px 0 0;
+    flex: 0 0 calc((100% - 60px) / 3 );
+    align-items: center;
   }
 
-  .box:last-child {
-    margin: 0;
-  }
-
+  
   .box img {
-    padding: 40px 0 20px 0;
+    padding: 10px 0;
   }
 
   .box p {
-    padding: 0 15px 40px 15px;
     text-align: center;
   }
 
-  .delegatiramecky {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -172,8 +159,6 @@ h2 {
 
   .uvod {
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 80px;
     justify-content: space-between;
     align-items: center;
   
@@ -198,11 +183,7 @@ h2 {
   .prouzek {
     margin-left: 0;
   }
-  .obsah1 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
+  
   .dvetlacitka {
     justify-content: left;
   }
@@ -210,17 +191,19 @@ h2 {
   .kancelar,
   .delegati {
     display: flex;
-    margin-bottom: 80px;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
   }
 
   .kancelarramecky {
     order: 0;
   }
+
   .kancelarramecky,
   .delegatiramecky {
     flex: 0 0 550px;
-    margin: 0;
+    
 }
 
   .kancelartext {
@@ -230,13 +213,8 @@ h2 {
 
   .kancelartext,
   .delegatitext {
-    flex: 1 0 430px;
+    flex: 0 0 430px;
     text-align: left;
-  }
-
-  .obsah2,
-  .obsah3 {
-    margin: 15px 0 0 0;
   }
 
   .delegatitext {
